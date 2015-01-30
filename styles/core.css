@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto', serif;
+  font-weight: 300; }
+
+h1.font-cursive {
+  font-family: "Sacramento", cursive;
+  font-weight: 300;
+  font-size: 6em; }
+
+h2.font-cursive {
+  font-family: "Sacramento", cursive;
+  font-weight: 300;
+  font-size: 4em; }
+
+h3.font-cursive {
+  font-family: "Sacramento", cursive;
+  font-weight: 300;
+  font-size: 3em; }
+
+h1.font-plain {
+  font-family: "Roboto Slab", serif; }
+
+h2.font-plain {
+  font-family: "Roboto Slab", serif; }
+
+h3.font-plain {
+  font-family: "Roboto Slab", serif; }
+
+.main-dark {
+  color: #4527A0; }
+
+.text-accent {
+  color: #26C6DA; }
+
+.shadow-low {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.46); }
+
+.font-weight-light {
+  font-weight: 200; }
+
+.navbar.navbar-inverse.navbar-fixed-top {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.46); }
+
+.navbar-inverse {
+  background-color: #4527A0; }
+  .navbar-inverse .navbar-header a.navbar-brand {
+    color: white;
+    font-size: 2em;
+    margin-right: 100px; }
+  .navbar-inverse .navbar-header a.navbar-brand:hover {
+    color: #26C6DA;
+    font-size: 2em; }
+  .navbar-inverse .navbar-nav > li > a {
+    color: white; }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    color: #26C6DA; }
+  .navbar-inverse .navbar-nav > li.active > a {
+    background-color: #4527A0;
+    border-bottom-color: #26C6DA;
+    border-bottom-width: 5px;
+    border-bottom-style: solid; }
+  .navbar-inverse .navbar-nav > li.active > a:hover {
+    background-color: #4527A0;
+    color: #26C6DA; }
+
+.section.full-height {
+  height: 1000px; }
+  .section.full-height .vertical-align {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%); }
+
+.bottom-align {
+  bottom: 0px; }
+
+/*# sourceMappingURL=core.css.map */
