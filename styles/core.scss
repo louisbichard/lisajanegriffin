@@ -4,6 +4,8 @@ $font-cursive: 'Sacramento', cursive;
 // COLOURS
 $color-main: #4527A0;
 $color-accent: #26C6DA;
+// OPACITY
+$opacity-secondary: 0.54;
 // SHADOW
 $shadow-low: 0 1px 2px rgba(0, 0, 0, 0.46);
 // FONTS
@@ -26,6 +28,18 @@ h3.font-cursive {
     font-weight: 300;
     font-size: 3em;
 }
+h4.font-cursive {
+    font-family: $font-cursive;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+a {
+    color: $color-accent;    
+}
+a:hover {
+    color: $color-accent;    
+    cursor: pointer;    
+}
 h1.font-plain {
     font-family: $font-plain;
 }
@@ -40,6 +54,9 @@ h3.font-plain {
 }
 .text-accent {
     color: $color-accent;
+}
+.text-secondary {
+    opacity: $opacity-secondary;
 }
 // SHADOW
 .shadow-low {
@@ -92,6 +109,32 @@ h3.font-plain {
         transform: translateY(-50%);
     }
 }
+.section.half-height {
+    height: 700px;
+    .vertical-align {
+        position: relative;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+}
 .bottom-align {
     bottom: 0px;
 }
+
+@for $i from 1 through 20 {
+  .animated-delay-#{$i} { 
+      -webkit-animation-delay: 0.5s * $i;
+    animation-delay: 0.5s * $i;
+      -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+   }
+}
+// TODO: ORGANISE THIS
+.height-900px {
+    height: 900px;
+}
+p, li {
+    font-size: 1.2em
+    }
