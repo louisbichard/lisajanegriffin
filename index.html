@@ -27,7 +27,7 @@
     <nav class="animated slideInDown  navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button id="toggle_navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -37,15 +37,15 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">What I do </a>
+                    <li><a class="nav-button" href="#about">What I do </a>
                     </li>
-                    <li><a href="#about">Consultant SIO</a>
+                    <li><a class="nav-button" href="#consultant">Consultant SIO</a>
                     </li>
-                    <li><a href="#contact">Life coach</a>
+                    <li><a class="nav-button" href="#life_coach">Life coach</a>
                     </li>
-                    <li><a href="#contact">Public speaker</a>
+                    <li><a class="nav-button" href="#public_speaker">Public speaker</a>
                     </li>
-                    <li><a href="#contact">Contact</a>
+                    <li><a class="nav-button" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -92,6 +92,7 @@
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -113,9 +114,9 @@
                     <img src="img/banner.jpg">
                     <div class="carousel-caption">
                         <p class="carousel-lead">
-                            <span>  <i class="fa fa-quote-left"></i> &nbsp; </span> Tenacious and passionately committed to helping victims of crime, Lisa never gives up and will overcome any obstacle in her way to seek justice with integrity and professionalism. Her dogged determination brought the 'UK’s Most Wanted' fugitive into custody overseas, for repatriation, to face trial for the murder of 8 people including 5 children. She serves as an inspiration for senior police investigators. She met her challenges head on with her team and helped bring peace and closure to the surviving family of these victims.
+                            <span>  <i class="fa fa-quote-left"></i> &nbsp; </span> Tenacious and passionate ... Lisa never gives up and will overcome any obstacle in her way with integrity and professionalism.
                             <span> &nbsp; <i class="fa fa-quote-right"></i>  </span>
-                            <p class="text-center"> - Warsi msdfsdfsd <strong>sdfsdf</strong></p>
+                            <p class="text-center"> - Baroness Sayeeda Warsi <strong> Shadow Minister for Community Cohesion, House of Lords </strong></p>
                         </p>
                     </div>
                 </div>
@@ -123,8 +124,20 @@
                     <img src="img/banner.jpg">
                     <div class="carousel-caption">
                         <p class="carousel-lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique repellat nihil, explicabo, libero at eveniet vitae assumenda earum temporibus obcaecati beatae natus tempora sequi aliquid nostrum modi aperiam quis odit!
+                            <span>  <i class="fa fa-quote-left"></i> &nbsp; </span> The most inspirational Police Officer ... one of the most effective detectives of her generation
+                            <span> &nbsp; <i class="fa fa-quote-right"></i>  </span>
                         </p>
+                        <p class="text-center"> - Barry Sheerman <strong> MP </strong></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/banner.jpg">
+                    <div class="carousel-caption">
+                        <p class="carousel-lead">
+                            <span>  <i class="fa fa-quote-left"></i> &nbsp; </span> Lisa is an exeptional S.I.O with great experience and is ideally placed to train future officers for that role
+                            <span> &nbsp; <i class="fa fa-quote-right"></i>  </span>
+                        </p>
+                        <p class="text-center"> - Paul Greaney <strong> QC </strong></p>
                     </div>
                 </div>
             </div>
@@ -139,7 +152,7 @@
             </a>
         </div>
     </div>
-    <div class="background-purple section">
+    <div class="background-purple section" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -168,8 +181,7 @@
             </div>
         </div>
     </div>
-    <div class="img-holder regular" data-image=""></div>
-    <div class="image-banner">
+    <div class="image-banner" id="consultant">
         <img class="img-responsive" src="img/awards.jpg">
         <p class="image-banner-caption bottom right font-plain wow slideInLeft" data-wow-delay="0.1s"> Consultant SIO </p>
     </div>
@@ -202,7 +214,15 @@
             </div>
         </div>
     </div>
-    <div class="image-banner">
+    <div class="section bold">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-4">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/mGEGyVKb3HM">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="image-banner" id="life_coach">
         <img class="img-responsive" src="img/lecturehall.jpg">
         <p class="image-banner-caption left top font-cursive wow slideInLeft" data-wow-delay="0.1s"> Life Coach </p>
     </div>
@@ -212,19 +232,19 @@
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3" class="circle_emphasis">
                             <h4 class="text-center">Change your thinking. </h4>
                         </div>
                         <div class="col-md-1">
-                            <h4><i class="fa fa-arrow-right"></i></h4>
+                            <h4><i class="fa fa-arrow-right text-center"></i></h4>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" class="circle_emphasis">
                             <h4 class="text-center">Find what's holding you back. </h4>
                         </div>
                         <div class="col-md-1">
-                            <h4><i class="fa fa-arrow-right"></i></h4>
+                            <h4><i class="fa fa-arrow-right text-center"></i></h4>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" class="circle_emphasis">
                             <h4 class="text-center">Be the best version of yourself.</h4>
                         </div>
                     </div>
@@ -294,7 +314,7 @@
             </div>
         </div>
     </div>
-    <div class="image-banner">
+    <div class="image-banner" id="public_speaker">
         <img class="img-responsive" src="img/lecturehall.jpg">
         <p class="image-banner-caption top right font-cursive wow slideInRight" data-wow-delay="0.1s"> Public Speaking </p>
     </div>
@@ -302,8 +322,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-accent font-cursive "> Inspirational</h2>
-                    <p> HELLO </p>
+                    <h2 class="text-accent text-center font-cursive "> Inspirational Speaking</h2>
+                    <br>
+                    <p class="lead text-center">
+                        <span>  <i class="fa fa-quote-left"></i> &nbsp; </span> I get knocked down.... but I get up again <span> &nbsp; <i class="fa fa-quote-right"></i>  </span> </p>
+                    <p class="lead text-center">
+                        ... is the theme tune to accompany my life story.
+                    </p>
+                    <p class="lead text-center">
+                        Each time I rise, I am stronger and more resolved to succeed. No challenge has alluded me. I have gained great insights along the way which I share to inspire others on their life's journey.
+                    </p>
+                    <br>
                     <hr>
                     <div class="row">
                         <div class="col-md-11">
@@ -380,7 +409,7 @@
             </div>
         </div>
     </div>
-    <div class="section wow fadeIn " data-wow-delay="0.1s">
+    <div class="section wow fadeIn " data-wow-delay="0.1s" id="contact">
         <div class="row text-center ">
             <div class="col-md-12 ">
                 <h2 class="text-accent font-cursive"> I'd love for you to <span class="underline"> get in touch</span>  </h2>
@@ -548,6 +577,18 @@
     <script src="bower_components/Parallax-ImageScroll/jquery.imageScroll.min.js"></script>
     <script>
     new WOW().init();
+
+
+    $(".nav-button").click(function(elem) {
+        /*
+        Toggle if in mobile
+         $('#toggle_navbar').click();
+        */
+        var target_element = elem.currentTarget.attributes.href.value
+        $('html, body').animate({
+            scrollTop: $(target_element).offset().top - 50
+        }, 1200);
+    });
 
     $('.read-more').on('click', function() {
         var modal_name = $(this).data('modalName');
