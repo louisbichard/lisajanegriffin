@@ -22,6 +22,9 @@ h4.font-cursive {
   font-weight: 300;
   font-size: 2.5em; }
 
+p.font-cursive {
+  font-family: "Sacramento", cursive; }
+
 a {
   color: #26C6DA; }
 
@@ -37,6 +40,9 @@ h2.font-plain {
 
 h3.font-plain {
   font-family: "Roboto Slab", serif; }
+
+.text-white {
+  color: white; }
 
 .main-dark {
   color: #4527A0; }
@@ -260,5 +266,89 @@ h3.font-plain {
 
 p, li {
   font-size: 1.2em; }
+
+div.read-more p.caption {
+  display: none; }
+
+div.read-more:hover {
+  cursor: pointer; }
+  div.read-more:hover img.read-more-image {
+    -webkit-filter: blur(5px);
+    filter: blur(5px); }
+  div.read-more:hover p.caption {
+    font-weight: 500;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30%; }
+
+.modal-header.no-underline {
+  border-bottom: 0px; }
+
+.modal-content {
+  border-radius: 0px; }
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none; }
+
+.carousel-control {
+  background-image: none;
+  background-color: none; }
+
+.carousel-caption {
+  color: black;
+  text-shadow: none; }
+
+span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
+  color: black; }
+
+p.carousel-lead {
+  font-weight: 300;
+  font-size: 240%;
+  color: #7E57C2; }
+
+.carousel-indicators > li {
+  background-color: #D1C4E9; }
+
+.carousel-indicators > li.active {
+  background-color: #7E57C2; }
+
+div.section {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+div.section.bold {
+  background-color: #26C6DA;
+  color: white; }
+  div.section.bold h2, div.section.bold h3, div.section.bold h4 {
+    color: #4527A0; }
+
+.underline {
+  text-decoration: underline; }
+
+.image-banner {
+  position: relative;
+  width: 100%; }
+
+.image-banner > .image-banner-caption {
+  position: absolute;
+  font-weight: 300;
+  font-size: 5em;
+  color: #26C6DA;
+  background-color: white;
+  padding: 10px; }
+
+.image-banner > .image-banner-caption.right {
+  right: 2%; }
+
+.image-banner > .image-banner-caption.left {
+  left: 2%; }
+
+.image-banner > .image-banner-caption.bottom {
+  bottom: 2%; }
+
+.image-banner > .image-banner-caption.top {
+  top: 2%; }
 
 /*# sourceMappingURL=core.css.map */

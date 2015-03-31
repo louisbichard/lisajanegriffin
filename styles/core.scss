@@ -3,7 +3,14 @@ $font-plain: 'Roboto Slab', serif;
 $font-cursive: 'Sacramento', cursive;
 // COLOURS
 $color-main: #4527A0;
+$color-main-medium: #7E57C2;
+$color-main-light: #D1C4E9;
 $color-accent: #26C6DA;
+// WINDOW SIZES
+$window-xs: 0px;
+$window-sm: 768px;
+$window-md: 992px;
+$window-lg: 1200px;
 // OPACITY
 $opacity-secondary: 0.54;
 // SHADOW
@@ -33,6 +40,9 @@ h4.font-cursive {
     font-weight: 300;
     font-size: 2.5em;
 }
+p.font-cursive {
+    font-family: $font-cursive;
+}
 a {
     color: $color-accent;    
 }
@@ -48,6 +58,9 @@ h2.font-plain {
 }
 h3.font-plain {
     font-family: $font-plain;
+}
+.text-white {
+    color: white;
 }
 .main-dark {
     color: $color-main;
@@ -138,3 +151,115 @@ h3.font-plain {
 p, li {
     font-size: 1.2em
     }
+
+div.read-more{
+    p.caption {
+        display: none;
+    }
+}
+
+div.read-more:hover {    
+    cursor: pointer;
+    img.read-more-image{
+        -webkit-filter: blur(5px); 
+        filter: blur(5px);        
+    }
+    p.caption {
+        font-weight: 500;
+        color: white;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+}
+
+.modal-header.no-underline {
+    border-bottom: 0px;
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+}
+.carousel-control {
+    background-image: none;
+    background-color: none;
+}
+
+.carousel-caption {
+    color: black;
+    text-shadow: none;
+}
+
+.carousel-control {
+    
+}
+
+span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
+  color: black;
+}
+
+p.carousel-lead {
+  font-weight: 300;
+  font-size: 240%;
+  color: $color-main-medium;
+}
+
+.carousel-indicators > li {
+    background-color: $color-main-light;
+}
+
+.carousel-indicators > li.active {
+    background-color: $color-main-medium;
+}
+
+div.section {
+    padding: {
+        top: 75px;
+        bottom: 75px;
+    }
+}
+div.section.bold {
+    background-color: $color-accent;
+    color:white;
+    h2, h3, h4 {
+        color: #4527A0;
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.image-banner {
+      position: relative;
+      width: 100%;
+}
+
+.image-banner > .image-banner-caption {
+      position: absolute;
+      font-weight: 300;
+      font-size: 5em;
+      color: #26C6DA;
+      background-color: white;
+      padding: 10px;
+}
+
+.image-banner > .image-banner-caption.right {
+    right: 2%;
+}
+
+.image-banner > .image-banner-caption.left {
+    left: 2%;
+}
+
+.image-banner > .image-banner-caption.bottom {
+    bottom: 2%;
+}
+
+.image-banner > .image-banner-caption.top {
+    top: 2%;
+}
