@@ -2,6 +2,12 @@ body {
   font-family: 'Roboto', serif;
   font-weight: 300; }
 
+h1, h2, h3 {
+  font-weight: 300; }
+
+h2 {
+  font-size: 40px; }
+
 h1.font-cursive {
   font-family: "Sacramento", cursive;
   font-weight: 300;
@@ -323,6 +329,12 @@ div.section.bold {
   color: white; }
   div.section.bold h2, div.section.bold h3, div.section.bold h4 {
     color: #4527A0; }
+
+div.section.light {
+  background-color: #7E57C2;
+  color: white; }
+  div.section.light h2, div.section.light h3, div.section.light h4 {
+    color: white; }
 
 .underline {
   text-decoration: underline; }

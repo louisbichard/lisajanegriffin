@@ -20,6 +20,14 @@ body {
     font-family: 'Roboto', serif;
     font-weight: 300;
 }
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+}
+
 h1.font-cursive {
     font-family: $font-cursive;
     font-weight: 300;
@@ -222,11 +230,20 @@ div.section {
         bottom: 75px;
     }
 }
+
 div.section.bold {
     background-color: $color-accent;
     color:white;
     h2, h3, h4 {
         color: #4527A0;
+    }
+}
+
+div.section.light {
+    background-color: $color-main-medium;
+    color:white;
+    h2, h3, h4 {
+        color: white;
     }
 }
 
