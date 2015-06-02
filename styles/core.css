@@ -327,8 +327,6 @@ div.section {
 div.section.bold {
   background-color: #26C6DA;
   color: white; }
-  div.section.bold h2, div.section.bold h3, div.section.bold h4 {
-    color: #4527A0; }
 
 div.section.light {
   background-color: #7E57C2;
@@ -364,6 +362,23 @@ div.section.light {
   top: 2%; }
 
 .circle_emphasis {
-  background-color: red; }
+  border-radius: 30px;
+  background-color: #7E57C2;
+  color: white; }
+
+html {
+  overflow-y: scroll; }
+
+.panel-default > .panel-heading {
+  border-color: black;
+  background-color: #26C6DA; }
+  .panel-default > .panel-heading a:hover {
+    color: #7E57C2; }
+
+.panel.panel-default {
+  border-width: 0px; }
+
+.panel-body {
+  color: black; }
 
 /*# sourceMappingURL=core.css.map */

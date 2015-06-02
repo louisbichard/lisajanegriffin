@@ -234,9 +234,6 @@ div.section {
 div.section.bold {
     background-color: $color-accent;
     color:white;
-    h2, h3, h4 {
-        color: #4527A0;
-    }
 }
 
 div.section.light {
@@ -282,5 +279,27 @@ div.section.light {
 }
 
 .circle_emphasis {
-    background-color: red;
+    border-radius: 30px;
+    background-color: $color-main-medium;
+    color: white;
+}
+html {
+  overflow-y: scroll;
+}
+
+
+.panel-default>.panel-heading {
+    a:hover {
+        color: $color-main-medium;
+    }
+    border-color: black;
+    background-color: $color-accent;
+}
+
+.panel.panel-default {
+    border-width: 0px;
+}
+
+.panel-body {
+    color: black;
 }
